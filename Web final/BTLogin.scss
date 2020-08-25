@@ -1,0 +1,106 @@
+@import './utils.scss';
+
+body{
+    margin: 0;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    ::after{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 5px;
+        content: "";
+        background: linear-gradient(270deg, #000000, #030303, #8e0e9c, #cd0ae2, #cd0ae2, #8e0e9c, #030303, #000000);
+        background-size: 1400% 1400%;
+        animation: BlackTriangle 4s ease infinite;
+        @keyframes BlackTriangle {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+    }
+    main{
+        width: 450;
+        height: 600px;
+        border: #a8a8a8 solid .5px;
+        // border-radius: 10px;
+        background-color: #e6e6e6;
+        margin: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .uno{
+            width: 450;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            .logo{
+                width: 150px;
+                height: 150px;
+                }  
+        }
+        .dos{
+            width: 450;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            .titulo{
+                @extend %fuente;
+                color: #000000;
+                font-size: 45px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-block-start: 0.67em;
+            }
+        }
+        .tres{
+            width: 450;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            .formulario{
+                width: 300px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                .email{
+                    @extend %fuente;
+                    width: 200px;
+                    height: 30px;
+                }
+                .password{
+                    @extend %fuente;
+                    width: 200px;
+                    height: 30px;
+                }
+                .boton{
+                    @extend %fuente;
+                    width: 200px;
+                    height: 50px;
+                    background-color: #000000;
+                    font-weight: bold;
+                    font-size: 20px;
+                    :hover{
+                        color: #cd0ae2;
+                    }
+                }
+                li{
+                    list-style: none;
+                    a{
+                        color: #000000;
+                        text-decoration: none;
+                    }
+                    :hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
