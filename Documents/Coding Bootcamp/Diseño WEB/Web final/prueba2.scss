@@ -1,0 +1,144 @@
+@import './utils.scss';
+
+body{
+    margin: 0;
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 75px;
+        margin: 0;
+        background-color: #000000;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+        ::after{
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            height: 5px;
+            content: "";
+            z-index: 10;
+            background: linear-gradient(270deg, #000000, #030303, #8e0e9c, #cd0ae2, #cd0ae2, #8e0e9c, #030303, #000000);
+            background-size: 1400% 1400%;
+            animation: BlackTriangle 4s ease infinite;
+            @keyframes BlackTriangle {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+        }
+        #menu_on{
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            z-index: 2;
+            span{
+                width: 100%;
+                height: 4px;
+                border-radius: 4px;
+                display: block;
+                position: absolute;
+                background: #c9c9c9;
+                transition: all 0.25s ease; 
+                transform-origin : 0px 100%;
+            }
+            span:nth-child(2){
+                top: calc(50% - 2px);
+            }
+            span:nth-child(3){
+                bottom: 0;
+            }
+        }
+        .links{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: -300px; 
+            width: 300px;
+            z-index: 1;
+            padding: 90px 30px 30px;
+            background: #000000;
+            opacity: 0;
+            transition: all 0.75s ease;
+            font-size: 20px;
+            overflow-y: auto;
+            :hover{
+                color: #cd0ae2;
+                border-bottom-color:#c9c9c9;
+                list-style: none;  
+            } 
+            a{
+                display:block;
+                text-decoration: none;
+                padding: 10px;
+                color: #c9c9c9;
+                border-bottom: 1px solid #c9c9c9;
+                transition: all ease 0.25s;
+            }
+            .lineup{
+                @extend %fuente;
+            }
+            .merchandise{ 
+                @extend %fuente;
+            }
+            .tickets{ 
+                @extend %fuente;
+            }
+            .login{
+                @extend %fuente;
+            }
+            
+        }
+        .visible_menu{
+            span:nth-child(1){
+                transform: rotate(45deg) translate(-2px,1px); 
+            }
+            span:nth-child(2){
+                opacity: 0;
+            }
+            span:nth-child(3){
+                transform: rotate(-45deg) translate(-3px,3px); 
+            }
+            .links{
+                left: 0;
+                opacity: 1;
+            }
+            #content{
+                transform: translateX(260px);
+            }
+        }
+        .home{
+            a{
+                list-style: none;
+            }
+            .logo{
+                margin-right: 40px;
+                height: 60px;
+                width: 60px;
+            }
+        }
+        // .links{
+        //     width: 100%;
+        //     // display: flex;
+        //     // justify-content: space-evenly;
+        //     list-style: none;
+        //     // .lineup{
+        //     //     @extend %fuente;
+        //     // }
+        //     // .merchandise{ 
+        //     //     @extend %fuente;
+        //     // }
+        //     // .tickets{ 
+        //     //     @extend %fuente;
+        //     // }
+        //     // .login{
+        //     //     @extend %fuente;
+        //     // }
+        // }
+    }
+}

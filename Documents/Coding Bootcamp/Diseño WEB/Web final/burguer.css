@@ -1,0 +1,55 @@
+button#menu {
+  display: none;
+}
+
+@media all and (max-width: 700px) {
+  button#menu {
+    display: block;
+  }
+}
+
+button#menu:focus + nav#superior {
+  display: block;
+}
+
+@media all and (max-width: 700px) {
+  nav#superior {
+    display: none;
+  }
+}
+
+nav#superior ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media all and (max-width: 700px) {
+  nav#superior ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+nav#superior ul a {
+  display: block;
+  width: 8em;
+  text-decoration: none;
+  border: 1px solid #BE353D;
+  padding: .3em 0;
+  text-align: center;
+  color: #FA453B;
+  background: #EF8E76;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+nav#superior ul a:hover {
+  background: #ec7b5f;
+}
+/*# sourceMappingURL=burguer.css.map */

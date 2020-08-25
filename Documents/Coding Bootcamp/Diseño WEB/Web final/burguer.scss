@@ -1,0 +1,44 @@
+$color_limon: #EF8E76;
+$color_pear: #BE353D;
+$color_rumi: #FA453B;
+$media_tablet: 700px;
+
+
+button#menu {
+	display: none;
+	@media all and (max-width: $media_tablet) {
+		display: block;
+	}
+	&:focus + nav#superior {
+		display: block;
+	}
+}
+
+nav#superior {
+	@media all and (max-width: $media_tablet) {
+		display: none;
+	}
+	ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		@media all and (max-width: $media_tablet) {
+			flex-direction: column;
+		}
+		a {
+			display: block;
+			width: 8em;
+			text-decoration: none;
+			border: 1px solid $color_pear;
+			padding: .3em 0;
+			text-align: center;
+			color: $color_rumi;
+			background: $color_limon;
+			transition: 1s all;
+			&:hover {
+				background: darken($color_limon, 5%);
+			}
+		}
+	}
+}

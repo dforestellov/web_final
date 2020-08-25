@@ -1,0 +1,177 @@
+@import url(//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
+body main .dos .titulo, body main .tres .formulario .email, body main .tres .formulario .password, body main .tres .formulario .boton {
+  font-family: europa, sans-serif;
+  font-style: normal;
+  font-weight: 300px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body ::after {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 5px;
+  content: "";
+  background: -webkit-gradient(linear, right top, left top, from(#000000), color-stop(#030303), color-stop(#8e0e9c), color-stop(#cd0ae2), color-stop(#cd0ae2), color-stop(#8e0e9c), color-stop(#030303), to(#000000));
+  background: linear-gradient(270deg, #000000, #030303, #8e0e9c, #cd0ae2, #cd0ae2, #8e0e9c, #030303, #000000);
+  background-size: 1400% 1400%;
+  -webkit-animation: BlackTriangle 4s ease infinite;
+          animation: BlackTriangle 4s ease infinite;
+}
+
+@-webkit-keyframes BlackTriangle {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes BlackTriangle {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body main {
+  width: 450;
+  height: 600px;
+  border: #a8a8a8 solid .5px;
+  background-color: #e6e6e6;
+  margin: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .uno {
+  width: 450;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .uno .logo {
+  width: 150px;
+  height: 150px;
+}
+
+body main .dos {
+  width: 450;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .dos .titulo {
+  color: #000000;
+  font-size: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-margin-before: 0.67em;
+          margin-block-start: 0.67em;
+}
+
+body main .tres {
+  width: 450;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .tres .formulario {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .tres .formulario .email {
+  width: 200px;
+  height: 30px;
+}
+
+body main .tres .formulario .password {
+  width: 200px;
+  height: 30px;
+}
+
+body main .tres .formulario .boton {
+  width: 200px;
+  height: 50px;
+  background-color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+body main .tres .formulario .boton :hover {
+  color: #cd0ae2;
+}
+
+body main .tres .formulario li {
+  list-style: none;
+}
+
+body main .tres .formulario li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+body main .tres .formulario li :hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=BTLogin.css.map */
