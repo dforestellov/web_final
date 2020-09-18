@@ -22,7 +22,7 @@ body {
 body ::after {
   display: block;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 5px;
   content: "";
