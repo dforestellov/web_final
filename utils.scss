@@ -1,0 +1,44 @@
+@import url(//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
+
+%fuente {
+    font-family: europa, sans-serif;
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #e6e6e6;
+} 
+
+%card {
+    width: 500px;
+    height: 750px;
+    margin-top: 10px;
+    background-color: #000000;
+    border-radius: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+%img{
+    width: 500px;
+    height: 400px;
+}
+
+%descripcion{
+    height: 300px;
+    // margin-left: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+%logo{
+    width: 40px;
+    height: 40px;
+}
