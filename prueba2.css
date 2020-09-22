@@ -1,0 +1,169 @@
+@import url(//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
+body nav .links .lineup, body nav .links .merchandise, body nav .links .tickets, body nav .links .login {
+  font-family: europa, sans-serif;
+  font-style: normal;
+  font-weight: 300px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+body {
+  margin: 0;
+}
+
+body nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  margin: 0;
+  background-color: #000000;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+body nav ::after {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 5px;
+  content: "";
+  z-index: 10;
+  background: -webkit-gradient(linear, right top, left top, from(#000000), color-stop(#030303), color-stop(#8e0e9c), color-stop(#cd0ae2), color-stop(#cd0ae2), color-stop(#8e0e9c), color-stop(#030303), to(#000000));
+  background: linear-gradient(270deg, #000000, #030303, #8e0e9c, #cd0ae2, #cd0ae2, #8e0e9c, #030303, #000000);
+  background-size: 1400% 1400%;
+  -webkit-animation: BlackTriangle 4s ease infinite;
+          animation: BlackTriangle 4s ease infinite;
+}
+
+@-webkit-keyframes BlackTriangle {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes BlackTriangle {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body nav #menu_on {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+body nav #menu_on span {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  background: #c9c9c9;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transform-origin: 0px 100%;
+          transform-origin: 0px 100%;
+}
+
+body nav #menu_on span:nth-child(2) {
+  top: calc(50% - 2px);
+}
+
+body nav #menu_on span:nth-child(3) {
+  bottom: 0;
+}
+
+body nav .links {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  width: 300px;
+  z-index: 1;
+  padding: 90px 30px 30px;
+  background: #000000;
+  opacity: 0;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  font-size: 20px;
+  overflow-y: auto;
+}
+
+body nav .links :hover {
+  color: #cd0ae2;
+  border-bottom-color: #c9c9c9;
+  list-style: none;
+}
+
+body nav .links a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #c9c9c9;
+  border-bottom: 1px solid #c9c9c9;
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
+}
+
+body nav .visible_menu span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(-2px, 1px);
+          transform: rotate(45deg) translate(-2px, 1px);
+}
+
+body nav .visible_menu span:nth-child(2) {
+  opacity: 0;
+}
+
+body nav .visible_menu span:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+          transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+body nav .visible_menu .links {
+  left: 0;
+  opacity: 1;
+}
+
+body nav .visible_menu #content {
+  -webkit-transform: translateX(260px);
+          transform: translateX(260px);
+}
+
+body nav .home a {
+  list-style: none;
+}
+
+body nav .home .logo {
+  margin-right: 40px;
+  height: 60px;
+  width: 60px;
+}
+/*# sourceMappingURL=prueba2.css.map */
