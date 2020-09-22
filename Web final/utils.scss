@@ -29,12 +29,12 @@
 
 %descripcion{
     height: 300px;
-    // margin-left: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    text-align: center;
 }
 
 %logo{

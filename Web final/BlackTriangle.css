@@ -53,6 +53,7 @@ body .buy .general2, body .buy .fan2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
 
 body footer .rrss img {
@@ -162,6 +163,24 @@ body nav .links :hover {
   color: #cd0ae2;
 }
 
+@media only screen and (max-width: 550px) {
+  body nav .links .lineup {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body nav .links .tickets {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body nav .links .login {
+    font-size: 10px;
+  }
+}
+
 body header {
   width: 100%;
   height: 800px;
@@ -180,11 +199,24 @@ body header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
 
 body header .titulo {
   font-size: 90px;
   color: #000000;
+}
+
+@media only screen and (max-width: 550px) {
+  body header .titulo {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body header .titulo {
+    font-size: 60px;
+  }
 }
 
 body header .subtitulo {
@@ -193,13 +225,19 @@ body header .subtitulo {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 550px) {
+  body header .subtitulo {
+    font-size: 40px;
+  }
+}
+
 body header .subtitulo2 {
   color: #000000;
 }
 
 body .buy {
   width: 100%;
-  height: 900px;
+  height: 1550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,6 +249,47 @@ body .buy {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 550px) {
+  body .buy {
+    height: 1100px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body .buy .img1 img {
+    width: 300px;
+    height: 240px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body .buy .general {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body .buy .general2 {
+    height: 250px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body .buy .fan {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body .buy .fan2 {
+    height: 250px;
+    font-size: 15px;
+  }
 }
 
 body .buy .boton {
@@ -226,6 +305,19 @@ body .buy .boton {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 550px) {
+  body .buy .boton {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body .buy .boton {
+    margin-top: 0px;
+  }
 }
 
 body .buy .boton input {
@@ -254,6 +346,7 @@ body .line-up {
   gap: 50px;
   width: 100%;
   background-color: #000000;
+  text-align: center;
 }
 
 body .line-up .lens {
@@ -289,11 +382,23 @@ body .line-up .lens .lens2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 90px;
+  font-size: 40px;
   width: 100%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+
+@media only screen and (min-width: 1150px) {
+  body .line-up .lens .lens2 {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body .line-up .lens .lens2 {
+    font-size: 20px;
+  }
 }
 
 body .line-up .nina {
@@ -329,11 +434,23 @@ body .line-up .nina .nina2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 90px;
+  font-size: 40px;
   width: 100%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+
+@media only screen and (min-width: 1150px) {
+  body .line-up .nina .nina2 {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body .line-up .nina .nina2 {
+    font-size: 20px;
+  }
 }
 
 body .line-up .charlotte {
@@ -369,11 +486,23 @@ body .line-up .charlotte .charlotte2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 90px;
+  font-size: 40px;
   width: 100%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+
+@media only screen and (min-width: 1150px) {
+  body .line-up .charlotte .charlotte2 {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body .line-up .charlotte .charlotte2 {
+    font-size: 20px;
+  }
 }
 
 body .line-up .val {
@@ -409,11 +538,23 @@ body .line-up .val .val2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 90px;
+  font-size: 40px;
   width: 100%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+
+@media only screen and (min-width: 1150px) {
+  body .line-up .val .val2 {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body .line-up .val .val2 {
+    font-size: 20px;
+  }
 }
 
 body .media {
@@ -524,6 +665,19 @@ body footer {
           flex-direction: column;
 }
 
+@media only screen and (max-width: 600px) {
+  body footer {
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body footer .logofinal {
+    width: 300px;
+    height: 240px;
+  }
+}
+
 body footer .rrss {
   list-style: none;
   display: -webkit-box;
@@ -538,6 +692,10 @@ body footer .rrss {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 40%;
+}
+
+body footer h2 {
+  text-align: center;
 }
 
 body footer h2 a {
