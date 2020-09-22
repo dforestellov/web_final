@@ -165,19 +165,19 @@ body nav .links :hover {
 
 @media only screen and (max-width: 550px) {
   body nav .links .lineup {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 
 @media only screen and (max-width: 550px) {
   body nav .links .tickets {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 
 @media only screen and (max-width: 550px) {
   body nav .links .login {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 

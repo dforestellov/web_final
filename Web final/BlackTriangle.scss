@@ -55,19 +55,19 @@ body{
             .lineup{
                 @extend %fuente;
                 @media only screen and (max-width: 550px){
-                    font-size: 10px;
+                    font-size: 13px;
                 }
             }
             .tickets{ 
                 @extend %fuente;
                 @media only screen and (max-width: 550px){
-                    font-size: 10px;
+                    font-size: 13px;
                 }
             }
             .login{
                 @extend %fuente;
                 @media only screen and (max-width: 550px){
-                    font-size: 10px;
+                    font-size: 13px;
                 }
             }
         }
