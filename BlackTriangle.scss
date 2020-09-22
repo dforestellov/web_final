@@ -43,29 +43,7 @@ body{
                 width: 60px;
             }
         }
-        // input{
-        //     display: none;
-        // }
-        // input:checked ~ .links{
-        //     display: block;
-        // }
-        // label{
-        //     box-sizing: border-box;
-        //     display: inline-block;
-        //     border: 1px solid #e6e6e6;
-        //     border-radius: 5px;
-        //     width: 30px;
-        //     height: 30px;
-        //     line-height: 30px;
-        //     font-weight: bold;
-        //     text-align: center;
-        //     user-select: none;
-        // }
-        // input:checked ~ label {
-        //     background: lightgrey; 
-        //   }
         .links{
-            // display: none;
             width: 100%;
             display: flex;
             justify-content: space-evenly;
@@ -93,11 +71,6 @@ body{
                 }
             }
         }
-        // @media screen and (min-width: 768px){
-        //     #menu{
-        //         display: none;
-        //     }
-        // }
     }
     header{
         width: 100%;
@@ -235,7 +208,6 @@ body{
             .lens1{
                 grid-column: 1/2;
                 width: 100%;
-                // height: 100%;
                 img{
                     width: 100%;
                     height: 100%;
@@ -264,7 +236,6 @@ body{
             .nina1{
                 grid-column: 1/2;
                 width: 100%;
-                // height: 100%;
                 img{
                     width: 100%;
                     height: 100%;
@@ -293,7 +264,6 @@ body{
             .charlotte1{
                 grid-column: 1/2;
                 width: 100%;
-                // height: 100%;
                 img{
                     width: 100%;
                     height: 100%;
@@ -322,7 +292,6 @@ body{
             .val1{
                 grid-column: 1/2;
                 width: 100%;
-                // height: 100%;
                 img{
                     width: 100%;
                     height: 100%;
@@ -345,7 +314,6 @@ body{
         }
     }
     .media{
-        //height: 1800px;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
